@@ -3,5 +3,6 @@ undertale 2 fractured memories is a project i've been making ever since i did my
 I hope you like the game, even in its beta state, and please, get the word around!
 
 how to install the game
+
 first, make sure you have python installed. if you don't install it here: https://www.python.org/downloads/
  then, download everything in the repository aside from the readme. after that,  place all the files in the same folder, and your good to go!
