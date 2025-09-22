@@ -6,4 +6,4 @@ I hope you like the game, even in its beta state, and please, get the word aroun
 how to install the game
 
 first, make sure you have python installed. if you don't install it here: https://www.python.org/downloads/
- then, download everything in the repository aside from the readme. after that,  place all the files in the same folder, and your good to go!
+ then, download everything in the repository aside from the readme. after that,  place all the files in the same folder, and you're good to go!
