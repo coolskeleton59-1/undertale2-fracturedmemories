@@ -15,4 +15,11 @@ as this game takes place after the true pacifist ending of undertale, so you wil
 
 after the barrier was broken by asriel/flowey (who is now good and is friends with everybody) everyone has been living peacefully on the surface. but, one day when they are all having a picnic together, frisk's vision blurs. a voice in their head whispers "one perfect timeline. no more resets. no more pain." and they then black out. when they wake up, they're back in the ruins, but something is off. nobody remembers what happened when frisk fell into the underground. sans and papurus are the only other people who remember what happened, and the three of them quickly notice that something is off. working together, they try to figure out what's going on and how to fix it.
 
+# Controls
+
+- **Arrow Keys** – Move  
+- **Z** – Interact / Confirm  
+- **X** – Cancel / Back  
+- **During Battle:** Arrow keys to move SOUL, Z to choose actions
+
 also, quick note, the game is only in development so some stuff might not work properly or might not have been implemented yet. so please don't go saying stuff like "oh this game is crap!" it's not. if you want it to be better maybe tell me the problem and I'll get around to it as soon as possible.
