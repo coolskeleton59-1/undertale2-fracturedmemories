@@ -11,7 +11,7 @@ first, make sure you have python installed. if you don't, you can install it her
 
  # plot
 
-as this game takes place after the true pacifist ending of undertale, so you will need at least a basic understanding of that ending in order to understand the plot of my game.
+**this game takes place after the true pacifist ending of undertale, so you will need at least a basic understanding of that ending in order to understand the plot of my game.**
 
 after the barrier was broken by asriel/flowey (who is now good and is friends with everybody) everyone has been living peacefully on the surface. but, one day when they are all having a picnic together, frisk's vision blurs. a voice in their head whispers "one perfect timeline. no more resets. no more pain." and they then black out. when they wake up, they're back in the ruins, but something is off. nobody remembers what happened when frisk fell into the underground. sans and papurus are the only other people who remember what happened, and the three of them quickly notice that something is off. working together, they try to figure out what's going on and how to fix it.
 
