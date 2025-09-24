@@ -262,7 +262,7 @@ class DialogueBox:
             return
         self.surf.fill((0,0,0))
         pygame.draw.rect(self.surf, (216,0,255), self.surf.get_rect(), 2)
-        text = self.font.render(self.lines[self.index], True, (255,255,255))
+        text = self.font.render(self.lines[self.index], True, (255,255,255)pygame.SCRALPHA)
         self.surf.blit(text,(10,20))
         surf.blit(self.surf, self.rect)
 
@@ -1160,3 +1160,4 @@ while running:
 
 pygame.quit()
 sys.exit()
+
