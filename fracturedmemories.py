@@ -33,7 +33,7 @@ mercy_sprite = pygame.image.load("mercy.png").convert_alpha()
 flowey_sprite = pygame.image.load("flowey.png").convert_alpha()
 snowdrake_sprite = pygame.image.load("snowdrake.png").convert_alpha()
 snowdin_tileset = pygame.image.load("snowdin_tileset.png").convert_alpha()
-font = pygame.font.Font("font.ttf", 12)
+font = pygame.font.Font("font.ttf", 16)
 
 # ---- Optional background layers (VISUAL-ONLY) ----
 # Safe if missing; we just skip.
