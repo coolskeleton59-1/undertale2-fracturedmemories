@@ -58,6 +58,13 @@ bullet_img = pygame.transform.smoothscale(bullet_img_raw, (8, 8))
 pygame.mixer.music.load("intro_theme.mp3")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
+blip_sfx = None
+try:
+    blip_sfx = pygame.mixer.Sound("blip.mp3")
+    blip_sfx.set_volume(0.3)  # softer volume
+except Exception:
+    blip_sfx = None
+
 
 W, H = 40, 30
 
@@ -247,24 +254,57 @@ class DialogueBox:
         self.lines = []
         self.index = 0
         self.visible = False
-        self.surf = pygame.Surface((500,70))
+        self.surf = pygame.Surface((500, 70))
         self.rect = self.surf.get_rect(midbottom=(SCREEN_W//2, SCREEN_H-10))
+
+        # NEW: typewriter effect
+        self.char_index = 0
+        self.timer = 0
+        self.char_delay = 2  # frames per character (lower = faster)
+
     def show(self, lines):
         self.lines = lines
         self.index = 0
         self.visible = True
+        self.char_index = 0
+        self.timer = 0
+
     def next(self):
-        self.index += 1
-        if self.index >= len(self.lines):
-            self.visible = False
+        if not self.visible:
+            return
+        # If line is still typing, finish it instead of skipping
+        if self.char_index < len(self.lines[self.index]):
+            self.char_index = len(self.lines[self.index])
+        else:
+            self.index += 1
+            if self.index >= len(self.lines):
+                self.visible = False
+            else:
+                self.char_index = 0
+                self.timer = 0
+
+    def update(self):
+        if self.visible:
+            if self.char_index < len(self.lines[self.index]):
+                self.timer += 1
+                if self.timer >= self.char_delay:
+                    self.char_index += 1
+                    self.timer = 0
+                    # Play blip sound (if available)
+                    if blip_sfx and self.lines[self.index][self.char_index - 1] != " ":
+                        blip_sfx.play()
+
     def draw(self, surf):
         if not self.visible:
             return
-        self.surf.fill((0,0,0))
-        pygame.draw.rect(self.surf, (216,0,255), self.surf.get_rect(), 2)
-        text = self.font.render(self.lines[self.index], True, (255,255,255)pygame.SCRALPHA)
-        self.surf.blit(text,(10,20))
+        self.surf.fill((0, 0, 0))
+        pygame.draw.rect(self.surf, (216, 0, 255), self.surf.get_rect(), 2)
+
+        # Render only part of the line (typewriter effect)
+        text = self.font.render(self.lines[self.index][:self.char_index], True, (255, 255, 255))
+        self.surf.blit(text, (10, 20))
         surf.blit(self.surf, self.rect)
+
 
 class Player:
     def __init__(self, x, y):
@@ -752,6 +792,7 @@ def draw_battle():
 
     # dialogue line (fallback if no dialogue visible)
     if dialogue.visible:
+        dialogue.update()
         dialogue.draw(screen)
     else:
         line = enemy_dialogue_for_phase(current_enemy_id, flowey_phase)[0]
@@ -1136,6 +1177,7 @@ while running:
     screen.blit(frag_text, (5,5))
 
     # Dialogue
+    dialogue.update()
     dialogue.draw(screen)
 
     # Ally choice overlay – drawn when active and no dialogue
@@ -1160,4 +1202,3 @@ while running:
 
 pygame.quit()
 sys.exit()
-
