@@ -8,7 +8,7 @@ I hope you like the game, even in its beta state, and please, get the word aroun
 
 # how to install the game
 
-first, make sure you have python installed. if you don't, you can install it here: https://www.python.org/downloads/ then, run the command pip install pygame.
+first, make sure you have python installed. if you don't, you can install it here: https://www.python.org/downloads/ then, run the command``` pip install pygame ```
  after that, download everything in the repository aside from the readme. finally,  place all the files in the same folder, open the python script, and you're good to go! (or if you don't want the source code you could just download the latest release! but make sure to download the assets but replace the python script with the exe file so there's no need to install python.)
 
  # plot
