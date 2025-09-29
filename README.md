@@ -1,7 +1,6 @@
 <img width="100" height="100" alt="IMG_20250917_223340" src="https://github.com/user-attachments/assets/d1c7c426-9dd0-44c6-aa86-4cb8e795238f" />
 
 # undertale 2 fractured memories 
-
 ---
 
 undertale 2 fractured memories is a project i've been making ever since i did my third and final run of undertale. after seeing everything there was to see in the game I wanted a continuation of that story, and as no other fanmade sequels satisfied me, i made my own!
@@ -9,7 +8,6 @@ I hope you like the game, even in its beta state, and please, get the word aroun
 
 ---
 # how to install the game
-
 ---
 
 first, make sure you have python installed. if you don't, you can install it here: https://www.python.org/downloads/ then, run the command``` pip install pygame ```.
@@ -18,12 +16,10 @@ first, make sure you have python installed. if you don't, you can install it her
 ---
 
  # plot
-
  ---
 
 **this game takes place after the true pacifist ending of undertale, so you will need at least a basic understanding of that ending in order to understand the plot of my game.**
 
----
 ---
 
 after the barrier was broken by asriel/flowey (who is now good and is friends with everybody) everyone has been living peacefully on the surface. but, one day when they are all having a picnic together, frisk's vision blurs. a voice in their head whispers "one perfect timeline. no more resets. no more pain." and they then black out. when they wake up, they're back in the ruins, but something is off. nobody remembers what happened when frisk fell into the underground. sans and papurus are the only other people who remember what happened, and the three of them quickly notice that something is off. working together, they try to figure out what's going on and how to fix it.
