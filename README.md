@@ -2,14 +2,20 @@
 
 # undertale 2 fractured memories 
 
+---
 
 undertale 2 fractured memories is a project i've been making ever since i did my third and final run of undertale. after seeing everything there was to see in the game I wanted a continuation of that story, and as no other fanmade sequels satisfied me, i made my own!
 I hope you like the game, even in its beta state, and please, get the word around!
 
+---
 # how to install the game
+
+---
 
 first, make sure you have python installed. if you don't, you can install it here: https://www.python.org/downloads/ then, run the command``` pip install pygame ```.
  after that, download everything in the repository aside from the readme. finally,  place all the files in the same folder, open the python script, and you're good to go! (or if you don't want the source code you could just download the latest release! but make sure to download the assets but replace the python script with the exe file so there's no need to install python.)
+
+---
 
  # plot
 
